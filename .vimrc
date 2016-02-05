@@ -43,6 +43,9 @@ set background=light
 colorscheme pencil
 let g:pencil_neutral_code_bg=1   " 0=gray (def), 1=normal
 
+" Explorer mode
+let g:netrw_listsyle=3 " NERD Tree
+
 " Airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='pencil'
