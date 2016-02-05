@@ -66,5 +66,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Remap escape insert mode
+imap jj <Esc>
+
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
