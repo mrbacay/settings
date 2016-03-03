@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'scrooloose/nerdcommenter'
@@ -22,20 +23,8 @@ filetype plugin indent on    " required
 " Ignore plugin indent changes
 filetype plugin on
 
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 " Show line numbers
 set number
-
-" Typeface
-
 
 " Color Scheme
 set t_Co=256
