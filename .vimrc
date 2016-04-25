@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
+Plugin 'embear/vim-localvimrc'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'reedes/vim-colors-pencil'
@@ -43,21 +44,13 @@ let g:airline#extensions#whitespace#enabled=1
 " Process syntaxes
 syntax enable
 
-" File format for Windows teams
-set ffs=dos,unix
+" Deafult coding convention
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 " Replace tabs with spaces
 set expandtab
-
-" Suna
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-
-" CloudHealth
-"set tabstop=2
-"set shiftwidth=2
-"set softtabstop=2
 
 " Remap pane navigation
 nnoremap <C-J> <C-W><C-J>
