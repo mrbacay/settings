@@ -53,3 +53,6 @@ function parse_git_dirty {
 export PS1="\[\e[38;5;19m\]\h\[\e[m\]\[\e[38;5;40m\]\W\[\e[m\]\[\e[38;5;54m\]\`parse_git_branch\`\[\e[m\]\n\[\e[38;5;19m\]➽\[\e[m\] "
 
 export EDITOR='vim'
+
+# Console command correction
+eval "$(thefuck --alias)"
