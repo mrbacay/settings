@@ -16,6 +16,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'valloric/matchtagalways'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
