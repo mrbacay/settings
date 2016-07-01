@@ -59,6 +59,13 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Open buffer in a new tab
+set switchbuf=usetab
+
+" Remap buffer navigation
+nnoremap <D-J> :sbprev<CR>
+nnoremap <D-L> :sbnext<CR>
+
 " Remap escape insert mode
 imap jj <Esc>
 
