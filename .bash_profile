@@ -1,7 +1,8 @@
 
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Include GOROOT-based install location
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # GET CURRENT BRANCH IN GIT REPO
 function parse_git_branch() {
@@ -50,9 +51,13 @@ function parse_git_dirty {
 	fi
 }
 
+# Customize command line
 export PS1="\[\e[38;5;19m\]\h\[\e[m\]\[\e[38;5;40m\]\W\[\e[m\]\[\e[38;5;54m\]\`parse_git_branch\`\[\e[m\]\n\[\e[38;5;19m\]➽\[\e[m\] "
 
+# Use Vim as default editor
 export EDITOR='vim'
 
 # Console command correction
 eval "$(thefuck --alias)"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

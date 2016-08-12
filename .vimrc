@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'bling/vim-airline'
 Plugin 'embear/vim-localvimrc'
+Plugin 'fatih/vim-go'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'reedes/vim-colors-pencil'
