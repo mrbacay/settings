@@ -1,0 +1,8 @@
+brew 'vcsh'
+brew 'keybase'
+brew 'emojify'
+brew 'vim'
+brew 'tmux'
+brew 'git'
+brew 'git-town'
+brew 'thefuck'
