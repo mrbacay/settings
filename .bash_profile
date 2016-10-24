@@ -1,8 +1,5 @@
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
-# Include GOROOT-based install location
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
 # GET CURRENT BRANCH IN GIT REPO
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -59,4 +56,5 @@ export EDITOR='vim'
 # Console command correction
 eval "$(thefuck --alias)"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# tmuxinator completion
+source ~/.rvm/gems/ruby-2.2.2/gems/tmuxinator-0.9.0/bin/tmuxinator.bash
