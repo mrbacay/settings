@@ -48,7 +48,20 @@ let g:airline#extensions#whitespace#enabled=1
 " Process syntaxes
 syntax enable
 
-" Deafult coding convention
+" Enable spell checking
+set spell spelllang=en_ca
+
+" Restyle spelling errors
+hi clear SpellBad
+hi SpellBad ctermbg=52 ctermfg=9
+hi clear SpellCap
+hi SpellCap ctermbg=52 ctermfg=9
+hi clear SpellRare
+hi SpellRarec ctermbg=17 ctermfg=21
+hi clear SpellLocal
+hi SpellLocal ctermbg=106 ctermfg=11
+
+" Default coding convention
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
